@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title>မေးခွန်းလေးမေးမယ်နော်</title>
+
+    <!-- bootstrap css1 js1  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <style type="text/css">
+
+        body{
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: rgb(84,84,84);
+            background: linear-gradient(90deg, rgba(84,84,84,1) 0%, rgba(215,220,240,1) 50%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+        }
+        
+        button{
+            border-style: none;
+            background: none;
+        }
+
+        button:hover{
+            border-bottom: solid;
+            border-color: #000046;
+            color: blue;
+        }
+
+        .container{
+            width: 600px;
+            /* background-color: aliceblue; */
+            border-style: solid;
+            padding: 20px;
+            border-color:#000046 ;
+        }
+
+        h4{
+            color: black;
+        }
+
+        h1{
+            color: red;
+        }
+
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <u class="pb-3 d-flex">စိတ်လှုပ်ရှားဖွယ်မေးခွန်းများ</u>
+        <h3 class="pb-3">ယောင်္ကျားလေးများ</h3>
+        <h4 class="qe1 pb-4">မေးခွန်း</h4>
+        <button type="button" class="btn1">Click For boy</button>
+        <button type="button" class="remove-btn mx-4">‌ဖျက်စမ်း</button>
+        <hr>
+        <h3 class="pb-3">မိန်းကလေးများ</h3>
+        <h4 class="qe2 pb-4">မေးခွန်း</h4>
+        <button type="button" class="btn2">Click For girl</button>
+        <button type="button" class="remove-btn mx-4">‌ဖျက်စမ်း</button>
+        <p>နေကောင်းလား</p>
+    </div>
+
+    <script src="../libs/jquery-3.7.1.min.js"></script>
+
+    <!-- bootstrap css1 js1  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+     $(document).ready(function(){
+
+        $('.btn1').click(function(){
+            // console.log('hay');
+            $('.qe1').replaceWith('<h1>စော်ရှိလား ?</h1>');
+        });
+
+        $('.btn2').click(function(){
+            // console.log('hay');
+            $('.qe2').replaceWith('<h1>ဘဲရှိလား ?</h1>');
+        });
+
+        $('.remove-btn').click(function(){
+            $('h2').empty();
+        })
+
+     });
+
+
+
+    </script>
+
+    
+</body>
+</html>
+
+<!-- 4JQ -->
